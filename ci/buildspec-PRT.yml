@@ -10,7 +10,7 @@ phases:
 #      - pip install dist/*
 #      # run PRT
 #      - ci/scripts/linux_test_perf_regression.sh
-      - ci/scripts/linux_s3_access.py
+      - python ci/scripts/linux_s3_access.py
 
 artifacts:
   files:
