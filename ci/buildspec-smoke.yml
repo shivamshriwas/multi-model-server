@@ -19,7 +19,7 @@ artifacts:
   name: build_artifacts
   base-directory: frontend/server/build/reports/tests/test
   secondary-artifacts:
-    model-archiver-tests:
+    model_archiver_tests:
       files:
         - '**/*'
       name: model_archiver_tests
