@@ -23,9 +23,9 @@ artifacts:
       files:
         - '**/*'
       name: model_archiver_tests
-      base-directory: model-archiver/results_units
+      base-directory: model-archiver/result_units
     mms_tests:
       files:
         - '**/*'
       name: mms_python_units
-      base-directory: results_units/
+      base-directory: result_units/
