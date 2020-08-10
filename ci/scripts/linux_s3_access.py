@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import boto3
 
-S3_BUCKET = "shivam-codebuild-test"
+S3_BUCKET = "shivam-codebuild-test/Nightly_Runs"
 
 print("**********8test s3 access******8")
 s3 = boto3.resource('s3')
