@@ -6,10 +6,11 @@ phases:
   build:
     commands:
       # create and install build
-      - ci/scripts/linux_build.sh
-      - pip install dist/*
-      # run PRT
-      - ci/scripts/linux_test_perf_regression.sh
+#      - ci/scripts/linux_build.sh
+#      - pip install dist/*
+#      # run PRT
+#      - ci/scripts/linux_test_perf_regression.sh
+      - ci/scripts/linux_s3_access.py
 
 artifacts:
   files:
