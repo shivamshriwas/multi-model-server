@@ -15,5 +15,17 @@ phases:
 
 artifacts:
   files:
-    - test/**/*
-  base-directory: frontend/server/build/reports/tests/
+    - '**/*'
+  name: build_artifacts
+  base-directory: frontend/server/build/reports/tests/test
+  secondary-artifacts:
+    model-archiver-tests:
+      files:
+        - '**/*'
+      name: model_archiver_tests
+      base-directory: model-archiver/results_units
+    mms_tests:
+      files:
+        - '**/*'
+      name: mms_python_units
+      base-directory: results_units/
