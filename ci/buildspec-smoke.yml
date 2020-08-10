@@ -15,6 +15,5 @@ phases:
 
 artifacts:
   files:
-    - frontend/server/build/reports/tests/test/**/*
-    - model-archiver/results_units/**/*
-    - results_units/**/*
+    - test/**/*
+  base-directory: frontend/server/build/reports/tests/
