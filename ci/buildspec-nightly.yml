@@ -19,8 +19,8 @@ phases:
 
   post_build:
     commands:
-      - mkdir nightly_artifacts/build_artifacts; mkdir nightly_artifacts/model_archiver_tests;
-      - mkdir nightly_artifacts/mms_python_units;   mkdir nightly_artifacts/api_tests
+      - mkdir -p nightly_artifacts/build_artifacts; mkdir -p nightly_artifacts/model_archiver_tests;
+      - mkdir -p nightly_artifacts/mms_python_units;   mkdir -p nightly_artifacts/api_tests
       - mv frontend/server/build/reports/tests/test/* nightly_artifacts/build_artifacts
       - mv model-archiver/result_units/* nightly_artifacts/model_archiver_tests
       - mv result_units/* nightly_artifacts/mms_python_units
